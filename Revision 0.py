@@ -33,26 +33,12 @@ for x in np.arange(0, 47.5, .01):
         maxY = y
         maxX = x
 
+## line from player to max height
+plt.plot((dist/2), sy, 'bo')
+plt.plot(-9.14, 1.8, 'bo')
 
-
-
-
-"""
-make the line formula then sub in every point from x=0 to x=47.5
-get perp dist from the point (x, g(x)) to the curve and add the distances
-change the line formula and repeat, noting the smallest value of theta
-return theta and the distance over the line to the curve
-"""
-
-## Line from player to max of eqn
-
-
-## iterate over points on line, find dist to curve
-
-
-## using smallest theta value, create a line and graph it on the plot
-
-
+plt.plot((dist/2, -9.14), (sy, 1.8), 'b--')
+## start angle @ 2.4 degrees
 
 ## plot 1
 plt.plot(xvals, yvals, 'r', label='Projectile Motion')
